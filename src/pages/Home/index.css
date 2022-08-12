@@ -1,0 +1,13 @@
+.adm-tab-bar-wrap{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.home .iconfont{
+font-size: 20px;
+}
+
+.adm-tab-bar-item-active{
+    color: #21b97a;
+}
