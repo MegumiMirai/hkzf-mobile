@@ -10,9 +10,10 @@ export default function Home(){
   //当前显示的路由
   const [activeKey, setActiveKey] = useState(useLocation().pathname.slice(6))
 
+
   const tabs = [
     {
-      key: 'index',
+      key: '',
       title: '首页',
       icon: <i className="iconfont icon-ind" />,
     },
@@ -45,7 +46,7 @@ export default function Home(){
         <Outlet/>
 
         {/*底部tabbar*/}
-        <TabBar activeKey={activeKey} onChange={value => setRouteActive(value)}>
+        <TabBar className="tabs" activeKey={useLocation().pathname.slice(6)} onChange={value => setRouteActive(value)}>
           {tabs.map(item => (
               <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
           ))}
