@@ -13,3 +13,7 @@ html, body{
 html, body, #root, .App{
   height: 100%;
 }
+
+li{
+  list-style: none;
+}

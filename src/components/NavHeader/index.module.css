@@ -1,0 +1,15 @@
+/*.adm-nav-bar{*/
+/*    background-color: #f5f5f5;*/
+/*    color: #333;*/
+/*}*/
+
+
+.navBar{
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/*全局类型*/
+.navBar :global(.adm-nav-bar-title){
+    color: #333;
+}
